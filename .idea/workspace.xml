@@ -4,13 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a1b93bb3-9761-4556-9719-b35133d5a991" name="Changes" comment="Create WordMasterProject">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mycom/word/ICRUD.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mycom/word/Word.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mycom/word/WordCRUD.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mycom/word/WordManager.java" afterDir="false" />
+    <list default="true" id="a1b93bb3-9761-4556-9719-b35133d5a991" name="Changes" comment="Add selectMenu Methods to WordManager and create WordCrud">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycom/word/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycom/word/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycom/word/WordManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycom/word/WordManager.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,7 +58,7 @@
       <option name="presentableId" value="Default" />
       <updated>1693839441552</updated>
       <workItem from="1693839442871" duration="702000" />
-      <workItem from="1693875953900" duration="3198000" />
+      <workItem from="1693875953900" duration="3448000" />
     </task>
     <task id="LOCAL-00001" summary="Create WordMasterProject">
       <option name="closed" value="true" />
@@ -72,7 +68,15 @@
       <option name="project" value="LOCAL" />
       <updated>1693839574555</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Add selectMenu Methods to WordManager and create WordCrud">
+      <option name="closed" value="true" />
+      <created>1693879605567</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1693879605567</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -80,7 +84,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Create WordMasterProject" />
-    <option name="LAST_COMMIT_MESSAGE" value="Create WordMasterProject" />
+    <MESSAGE value="Add selectMenu Methods to WordManager and create WordCrud" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add selectMenu Methods to WordManager and create WordCrud" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

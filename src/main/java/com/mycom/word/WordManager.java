@@ -30,10 +30,15 @@ public class WordManager {
         while (true) {
             int menu = selectMenu();
             if (menu == 0) break;
-            if (menu == 4) {
-                wordCRUD.addWord();
-            } else if (menu == 1) {
+            else if(menu == 1){
                 wordCRUD.listAll();
+            }else if(menu == 2){
+                //수준별 단어 보기
+            }else if(menu == 3){
+                //단어 검색
+            }else if(menu == 4){
+                //단어 추가
+                wordCRUD.addWord();
             }
         }
         System.out.println("프로그램 종료!");
