@@ -3,33 +3,43 @@ package com.mycom.word;
 import java.util.ArrayList;
 
 public class Word {
-    private int level;
-    private int id;
+    private int wordId;
+    private int wordLevel;
     private String word;
-    private String meaning;
+    private String wordMeaning;
 
-    public Word(int level, int id, String word, String meaning) {
-        this.level = level;
-        this.id = id;
+    public Word(int wordId, int wordLevel, String word, String wordMeaning) {
+        this.wordId = wordId;
+        this.wordLevel = wordLevel;
         this.word = word;
-        this.meaning = meaning;
+        this.wordMeaning = wordMeaning;
     }
 
-
-    public int getLevel() {
-        return level;
+    @Override
+    public String toString() {
+        String levelOfWord = "";
+        for(int i = 0; i < wordLevel; i++) {
+            levelOfWord += "*";
+        }
+        String dictionaryWord;
+        dictionaryWord= String.format("%-3s",levelOfWord) + String.format("%15s",word) + "  " + wordMeaning;
+        return dictionaryWord;
     }
 
-    public void setLevel(int level) {
-        this.level = level;
+    public int getWordId() {
+        return wordId;
     }
 
-    public int getId() {
-        return id;
+    public void setWordId(int wordId) {
+        this.wordId = wordId;
     }
 
-    public void setId(int id) {
-        this.id = id;
+    public int getWordLevel() {
+        return wordLevel;
+    }
+
+    public void setWordLevel(int wordLevel) {
+        this.wordLevel = wordLevel;
     }
 
     public String getWord() {
@@ -40,11 +50,11 @@ public class Word {
         this.word = word;
     }
 
-    public String getMeaning() {
-        return meaning;
+    public String getWordMeaning() {
+        return wordMeaning;
     }
 
-    public void setMeaning(String meaning) {
-        this.meaning = meaning;
+    public void setWordMeaning(String wordMeaning) {
+        this.wordMeaning = wordMeaning;
     }
 }

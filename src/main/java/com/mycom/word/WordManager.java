@@ -31,7 +31,7 @@ public class WordManager {
             int menu = selectMenu();
             if (menu == 0) break;
             else if(menu == 1){
-                wordCRUD.listAll();
+                wordCRUD.listDictionary();
             }else if(menu == 2){
                 //수준별 단어 보기
             }else if(menu == 3){
