@@ -8,4 +8,5 @@
 <h3>4번: 단어 추가하기</h3>
 <img src="https://github.com/eu2goo/WordMasterProject/blob/main/screenshots/%EB%8B%A8%EC%96%B4%EC%B6%94%EA%B0%80_1-22200296.png">
 <img src="https://github.com/eu2goo/WordMasterProject/blob/main/screenshots/%EB%8B%A8%EC%96%B4%EC%B6%94%EA%B0%80_2-22200296.png">
-<h3></h3>
+<h3>0번: 프로그램 종료</h3>
+<img src="https://github.com/eu2goo/WordMasterProject/blob/main/screenshots/%E1%84%8C%E1%85%A9%E1%86%BC%E1%84%85%E1%85%AD%E1%84%92%E1%85%A1%E1%84%80%E1%85%B5-22200296.png">
