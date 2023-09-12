@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a1b93bb3-9761-4556-9719-b35133d5a991" name="Changes" comment="edit WordCrud" />
+    <list default="true" id="a1b93bb3-9761-4556-9719-b35133d5a991" name="Changes" comment="edit WordCrud and create update function and working on the delete function">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycom/word/ICRUD.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycom/word/ICRUD.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycom/word/WordCRUD.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycom/word/WordCRUD.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycom/word/WordManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycom/word/WordManager.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -46,6 +51,15 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="com.mycom.word.Main" />
+      <module name="WordMasterProject" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -58,7 +72,13 @@
       <workItem from="1693875953900" duration="3472000" />
       <workItem from="1693985787945" duration="2202000" />
       <workItem from="1693998388060" duration="262000" />
-      <workItem from="1694064140544" duration="1968000" />
+      <workItem from="1694064140544" duration="2260000" />
+      <workItem from="1694070203378" duration="371000" />
+      <workItem from="1694135302518" duration="3305000" />
+      <workItem from="1694158702092" duration="1165000" />
+      <workItem from="1694167618695" duration="1145000" />
+      <workItem from="1694482844581" duration="1497000" />
+      <workItem from="1694535409437" duration="1646000" />
     </task>
     <task id="LOCAL-00001" summary="Create WordMasterProject">
       <option name="closed" value="true" />
@@ -94,6 +114,7 @@
     <MESSAGE value="Create WordMasterProject" />
     <MESSAGE value="Add selectMenu Methods to WordManager and create WordCrud" />
     <MESSAGE value="edit WordCrud" />
-    <option name="LAST_COMMIT_MESSAGE" value="edit WordCrud" />
+    <MESSAGE value="edit WordCrud and create update function and working on the delete function" />
+    <option name="LAST_COMMIT_MESSAGE" value="edit WordCrud and create update function and working on the delete function" />
   </component>
 </project>
