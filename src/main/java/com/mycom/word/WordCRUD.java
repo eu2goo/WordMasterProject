@@ -1,8 +1,11 @@
 package com.mycom.word;
 
+import java.io.BufferedReader;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
 import java.util.ArrayList;
 import java.util.Scanner;
-import java.util.stream.Stream;
+import java.util.stream.Collectors;
 
 public class WordCRUD implements ICRUD {
     Scanner inputScanner;
@@ -43,14 +46,14 @@ public class WordCRUD implements ICRUD {
             System.out.println("입력된 단어가 없습니다!");
         }else {
             System.out.print("=> 수정할 단어 검색:  ");
-            String search = inputScanner.next();
-            ArrayList<Word> searchList = searchWords(search);
+            String s = inputScanner.next();
+            ArrayList<Word> searchList = searchWordFromList(s);
             System.out.println("________________________________________________");
             for(int i = 0; i < searchList.size(); i++){
                 System.out.println(i+1 + " " + searchList.get(i).toString());
             }
             System.out.println("________________________________________________");
-            System.out.println("=> 수정할 번호 선택: ");
+            System.out.print("=> 수정할 번호 선택: ");
             int indexUpdate = inputScanner.nextInt();
 
             System.out.print("=> 뜻 입력: ");
@@ -71,14 +74,10 @@ public class WordCRUD implements ICRUD {
             System.out.println("입력된 단어가 없습니다!");
         }else {
             System.out.print("=> 삭제할 단어 검색:  ");
-            String search = inputScanner.next();
-            ArrayList<Word> searchList = searchWords(search);
-            System.out.println("________________________________________________");
-            for(int i = 0; i < searchList.size(); i++){
-                System.out.println(i+1 + " " + searchList.get(i).toString());
-            }
-            System.out.println("________________________________________________");
-            System.out.println("=> 삭제할 번호 선택: ");
+            String s = inputScanner.next();
+            ArrayList<Word> searchList = searchWordFromList(s);
+            showList(searchList);
+            System.out.print("=> 삭제할 번호 선택: ");
             int indexDelete = inputScanner.nextInt();
 
             System.out.print("=> 정말로 삭제하시겠습니다?(Y/n): ");
@@ -93,16 +92,50 @@ public class WordCRUD implements ICRUD {
 
     @Override
     public void searchLevel() {
+        System.out.print("=> 레벨(1:초금, 2:중급, 3:고급) 선택:  ");
+        int l = inputScanner.nextInt();
+        ArrayList<Word> searchList;
+        searchList = wordList.stream()
+                .filter(word -> word.getWordLevel()==l)
+                .collect(Collectors.toCollection(ArrayList::new));
+        showList(searchList);
+    }
+
+    @Override
+    public void searchWordList(){
+        System.out.print("=> 검색할 단어 입력:  ");
+        String s = inputScanner.next();
+        ArrayList<Word> searchList = searchWordFromList(s);
+        showList(searchList);
+    }
+
+    public ArrayList<Word> searchWordFromList(String s) {
+        ArrayList<Word> searchList;
+        searchList = wordList.stream()
+                .filter(word -> word.getWord().contains(s))
+                .collect(Collectors.toCollection(ArrayList::new));
+//        ArrayList<Word> searchList  = new ArrayList<>();
+//        for (Word word : wordList) {
+//            if (word.getWord().contains(s)) {
+//                searchList.add(word);
+//            }
+//        }
+        return searchList;
+    }
+    public void showList(ArrayList<Word> list){
+        System.out.println("________________________________________________");
+        for(int i = 0; i < list.size(); i++){
+            System.out.println(i+1 + " " + list.get(i).toString());
+        }
+        System.out.println("________________________________________________");
 
     }
 
-    public ArrayList<Word> searchWords(String s) {
-        ArrayList<Word> searchList  = new ArrayList<>();
-        for (Word word : wordList) {
-            if (word.getWord().contains(s)) {
-                searchList.add(word);
-            }
+    public void loadFile(){
+        try{
+            BufferedReader inputReader = new BufferedReader(new FileReader("word.txt"));
+        } catch (FileNotFoundException e) {
+            throw new RuntimeException(e);
         }
-        return searchList;
     }
 }
