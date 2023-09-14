@@ -28,6 +28,7 @@ public class WordManager {
     }
 
     public void start() {
+        wordCRUD.loadFile();
         while (true) {
             int menu = selectMenu();
             if (menu == 0) break;
@@ -35,9 +36,10 @@ public class WordManager {
                 wordCRUD.listWords();
             }else if(menu == 2){
                 //수준별 단어 보기
+                wordCRUD.searchLevel();
             }else if(menu == 3){
                 //단어 검색
-
+                wordCRUD.searchWordList();
             }else if(menu == 4){
                 //단어 추가
                 wordCRUD.addWord();
@@ -47,6 +49,8 @@ public class WordManager {
             }else if(menu == 6){
                 //단어 삭제
                 wordCRUD.delete();
+            }else if(menu == 7){
+                //파일 저장
             }
         }
         System.out.println("프로그램 종료!");
