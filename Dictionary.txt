@@ -1,4 +1,4 @@
-1|beautiful|아름다운, 멋진
+1|beautiful|아름다운, 예쁜
 2|happy|행복한, 기쁜
 3|sad|슬픈, 우울한
 1|angry|화난, 분노한
@@ -27,4 +27,4 @@
 1|empty|빈, 공허한
 2|full|가득한, 충만한
 3|young|젊은, 어린
-1|old|늙은, 오래된
+2|hello|안녕
