@@ -51,6 +51,7 @@ public class WordManager {
                 wordCRUD.delete();
             }else if(menu == 7){
                 //파일 저장
+                wordCRUD.saveFile();
             }
         }
         System.out.println("프로그램 종료!");

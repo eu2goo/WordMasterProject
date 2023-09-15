@@ -26,7 +26,8 @@ public class WordCRUD implements ICRUD {
     public Object add() {
         System.out.print("=> 난이도(1,2,3) & 새 단어 입력: ");
         int wordLevel = inputScanner.nextInt();
-        String word = inputScanner.nextLine();
+        String word = inputScanner.next();
+        inputScanner.nextLine();
         System.out.print("뜻 입력: ");
         String wordMeaning = inputScanner.nextLine();
 
@@ -152,7 +153,27 @@ public class WordCRUD implements ICRUD {
             e.printStackTrace();
         }
     }
-//    public void saveFile(){
-//        PrintWriter fileWriter = new PrintWriter("")
-//    }
+    public void saveFile(){
+        PrintWriter outputWriter = null;
+
+        try {
+            outputWriter = new PrintWriter("Dictionary.txt");
+
+            for (Word currentWord : wordList) {
+                outputWriter.println(currentWord.getWordLevel() + "|" +
+                        currentWord.getWord() + "|" +
+                        currentWord.getWordMeaning());
+            }
+
+            System.out.println("모든 단어 파일 저장 완료!!!");
+
+        } catch (IOException e) {
+            e.printStackTrace();
+        } finally {
+            if (outputWriter != null) {
+                outputWriter.close();
+            }
+        }
+    }
+
 }

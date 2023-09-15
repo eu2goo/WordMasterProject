@@ -4,7 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a1b93bb3-9761-4556-9719-b35133d5a991" name="Changes" comment="feat: 수정과 삭제 함수 새롭게 구현, search 함수 구현 파일 업로드 구현 시작">
+    <list default="true" id="a1b93bb3-9761-4556-9719-b35133d5a991" name="Changes" comment="feat: 파일 로드 함수 구현 CRUD에 추가">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/mycom/word/WordCRUD.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycom/word/WordCRUD.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/mycom/word/WordManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycom/word/WordManager.java" afterDir="false" />
@@ -85,7 +86,8 @@
       <workItem from="1694482844581" duration="1497000" />
       <workItem from="1694535409437" duration="1925000" />
       <workItem from="1694606064112" duration="3320000" />
-      <workItem from="1694701934188" duration="2495000" />
+      <workItem from="1694701934188" duration="3170000" />
+      <workItem from="1694740811251" duration="1159000" />
     </task>
     <task id="LOCAL-00001" summary="Create WordMasterProject">
       <option name="closed" value="true" />
@@ -127,7 +129,15 @@
       <option name="project" value="LOCAL" />
       <updated>1694613967574</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="feat: 파일 로드 함수 구현 CRUD에 추가">
+      <option name="closed" value="true" />
+      <created>1694704571578</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1694704571578</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -140,6 +150,7 @@
     <MESSAGE value="edit WordCrud and create update function and working on the delete function" />
     <MESSAGE value="feat: 단어 수정 함수와 삭제 함수 수정&amp;추가, searchWords라는 함수를 만들어서 해당 단어를 가진 word를 ArrayList로 반환하게 함" />
     <MESSAGE value="feat: 수정과 삭제 함수 새롭게 구현, search 함수 구현 파일 업로드 구현 시작" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: 수정과 삭제 함수 새롭게 구현, search 함수 구현 파일 업로드 구현 시작" />
+    <MESSAGE value="feat: 파일 로드 함수 구현 CRUD에 추가" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: 파일 로드 함수 구현 CRUD에 추가" />
   </component>
 </project>
